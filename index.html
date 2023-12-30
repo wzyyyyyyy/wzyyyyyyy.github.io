@@ -1,0 +1,1978 @@
+<!DOCTYPE html>
+<div lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>微信年度聊天报告</title>
+    <link rel="stylesheet" href="https://memotrace.lc044.love/static/css/style.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts@latest/dist/echarts.min.js"></script>
+    <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts-wordcloud.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullpage.js/dist/fullpage.min.css" />
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fullpage.js/dist/fullpage.min.js"></script>
+</head>
+<body>
+    <div id="snow"></div>
+    <!-- Your content goes here -->
+    <div id="fullpage">
+        <div class="section">
+            <div>
+                <img class="Mountain-Image" src="https://www.freeimg.cn/i/2023/12/20/6582c04711cd2.png" alt="Mountain Image">
+                <img class="corner-light light-top-left" src="https://www.freeimg.cn/i/2023/12/20/6582c05d9dcbb.png" alt="Top Left Light">
+                <img class="corner-light light-top-right" src="https://www.freeimg.cn/i/2023/12/20/6582c07b257db.png" alt="Bottom Right Light">
+                <img src="https://www.freeimg.cn/i/2023/12/20/6582c0514c518.png" alt="Left Bottom Image" class="corner-image left-bottom">
+                <img src="https://www.freeimg.cn/i/2023/12/20/6582c04946138.png" alt="Right Top Image" class="corner-image right-bottom">
+
+                <div class="center-container">
+                    <div>
+                        <img src="https://www.freeimg.cn/i/2023/12/20/6582c05a78e58.png">
+                    </div>
+                    <div class="user-container">
+                        <div class="user">
+                            <img class="avatar" src="wxid_lvrx7ohjjqqf22.png">
+                            <span class="nickname">汪</span>
+                        </div>
+
+                        <img src="https://memotrace.lc044.love/static/img/铃铛.png" alt="Right Top Image" class="spliter-img">
+                        <div class="user">
+                            <img class="avatar" src="wxid_arjsk8q6hnhv22.png">
+                            <span class="nickname">羊</span>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="mt-3">我们第一次聊天在</p>
+                        <p id="first_time" class="first-time">2023-05-15 21:20:23</p>
+                        <p class="mt-3">距今已有</p>
+                        <div class="mt-3">
+                            <span id="t_d"></span>
+                            <span id="t_h"></span>
+                            <span id="t_m"></span>
+                            <span id="t_s"></span>
+                        </div>
+                    </div>
+                    <!-- <div>
+                    <img src="img/雪人.gif">
+                </div>
+                <div>
+                    <img src="img/雪人1.gif">
+                </div> -->
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div>
+                <img class="Mountain-Image" src="https://www.freeimg.cn/i/2023/12/20/6582c04711cd2.png" alt="Mountain Image">
+                <img class="corner-light light-top-left" src="https://www.freeimg.cn/i/2023/12/20/6582c05d9dcbb.png" alt="Top Left Light">
+                <img class="corner-light light-top-right" src="https://www.freeimg.cn/i/2023/12/20/6582c07b257db.png" alt="Bottom Right Light">
+                <img src="https://www.freeimg.cn/i/2023/12/20/6582c07223f22.png" alt="礼袋" class="corner-image left-bottom-gift">
+                <img src="https://www.freeimg.cn/i/2023/12/20/6582c055cc6df.png" alt="圣诞老人" class="corner-image right-bottom-oldman">
+            </div>
+            <div class="wordcloud">
+                <div id="word_cloud" class="chart-container"></div>
+            </div>
+            <div class="keyword-container">
+                <div class="tp1">二〇二三</div>
+                <div class="tp1">你们说的最多的是</div>
+                <div class="keyword">“宝贝”<span class="keyword-num">1508</span><span class="tp1">次</span></div>
+                <!-- <img src="static/img/窗雪.png"> -->
+            </div>
+            <div class="dialog-container">
+
+                <div class="item item-center">2023-10-10 00:55:53</div>
+
+
+                <div class="item item-right">
+                    <div class="bubble bubble-right">
+
+                        我永远是你的哦<span style="color:red">宝贝</span>
+
+
+                    </div>
+                    <img class="bubble-avatar" src="data/avatar/wxid_lvrx7ohjjqqf22.png">
+                </div>
+                <div class="item item-left">
+                    <img class="bubble-avatar" src="data/avatar/wxid_arjsk8q6hnhv22.png">
+                    <div class="bubble bubble-left">
+                        哼
+                    </div>
+                </div>
+
+
+                <div class="item item-center">2023-07-31 10:20:57</div>
+
+
+                <div class="item item-right">
+                    <div class="bubble bubble-right">
+
+                        <span style="color:red">宝贝</span>
+
+                        <span style="color:red">宝贝</span>
+
+
+                    </div>
+                    <img class="bubble-avatar" src="data/avatar/wxid_lvrx7ohjjqqf22.png">
+                </div>
+                <div class="item item-left">
+                    <img class="bubble-avatar" src="data/avatar/wxid_arjsk8q6hnhv22.png">
+                    <div class="bubble bubble-left">
+                        啊啊啊啊啊
+                    </div>
+                </div>
+
+
+                <div class="item item-center">2023-09-05 22:41:32</div>
+
+
+                <div class="item item-right">
+                    <div class="bubble bubble-right">
+
+                        <span style="color:red">宝贝</span>
+
+                        干啥呢
+                    </div>
+                    <img class="bubble-avatar" src="data/avatar/wxid_lvrx7ohjjqqf22.png">
+                </div>
+                <div class="item item-left">
+                    <img class="bubble-avatar" src="data/avatar/wxid_arjsk8q6hnhv22.png">
+                    <div class="bubble bubble-left">
+                        嗯呢
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="section">
+            <div>
+                <img class="Mountain-Image" src="https://www.freeimg.cn/i/2023/12/20/6582c04711cd2.png" alt="Mountain Image">
+                <img class="corner-light light-top-left txt" src="https://www.freeimg.cn/i/2023/12/20/6582c05d9dcbb.png" alt="Top Left Light">
+                <img class="corner-light light-top-right txt" src="https://www.freeimg.cn/i/2023/12/20/6582c07b257db.png" alt="Bottom Right Light">
+                <img src="https://www.freeimg.cn/i/2023/12/20/6582c04589c47.png" alt="Left Bottom Image" class="corner-image left-bottom">
+                <img src="https://www.freeimg.cn/i/2023/12/21/65831360a36d4.gif" alt="Right Top Image" class="corner-image right-bottom" style="max-height: 500px;">
+                <img src="https://www.freeimg.cn/i/2023/12/20/6582c054816cf.png" alt="圣诞老人" class="center-top-time">
+                <img src="https://memotrace.lc044.love/static/img/平安夜.png" alt="Right Top Image" class="left-time">
+                <div class="time-container">
+                    <div class="text112">2023-06-20 04:30:13</div>
+                    <div class="text112">这么晚了你们还在聊天</div>
+                    <div class="text112">那天是什么日子<span style="color: brown;">你还记得</span>嘛</div>
+                    <div><br></div>
+                    <div class="text112">你们都是<span style="color: brown;">夜猫子</span></div>
+                    <div class="text113">在23:00</div>
+                    <div class="text112">你们一共发送了<span style="color: brown;">16994</span>条消息</div>
+                </div>
+                <div class="parent">
+                    <div class="dialog-container-time">
+                        <div class="item item-center">2023-06-20 04:30:13</div>
+
+
+
+                        <div class="item item-right">
+                            <div class="bubble bubble-right">
+                                睡了睡了
+                            </div>
+                            <img class="bubble-avatar" src="data/avatar/wxid_lvrx7ohjjqqf22.png">
+                        </div>
+
+
+
+                        <div class="item item-left">
+                            <img class="bubble-avatar" src="data/avatar/wxid_arjsk8q6hnhv22.png">
+                            <div class="bubble bubble-left">
+                                起来上个厕所
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div>
+                <img class="Mountain-Image" src="https://www.freeimg.cn/i/2023/12/20/6582c04711cd2.png" alt="Mountain Image">
+                <img class="corner-light light-top-left txt" src="https://www.freeimg.cn/i/2023/12/20/6582c05d9dcbb.png" alt="Top Left Light">
+                <img class="corner-light light-top-right txt" src="https://www.freeimg.cn/i/2023/12/20/6582c07b257db.png" alt="Bottom Right Light">
+                <img src="https://www.freeimg.cn/i/2023/12/20/6582c03ce4548.png" alt="Left Bottom Image" class="corner-image left-bottom">
+                <img src="https://www.freeimg.cn/i/2023/12/20/6582c05a9a4bd.png" alt="滑雪的小女孩" class="corner-image right-bottom">
+                <img src="https://www.freeimg.cn/i/2023/12/20/6582c04d5151f.png" alt="Right Top Image" class="snow-ball">
+                <img src="https://memotrace.lc044.love/static/img/礼盒1.png" alt="Right Top Image" class="ttq">
+                <div class="time-container">
+                    <div class="text112">过去的一年里</div>
+                    <div class="text112">你们一共发送了<span style="color: brown;">94917</span>条消息</div>
+                    <div class="text112">总计<span style="color: brown;">566907</span>字</div>
+                    <div><br></div>
+                    <div class="text112">你们的聊天似乎没有规律</div>
+                    <div class="text112">
+                        <span style="color: brown;">6月</span>
+                        一共发送了
+                        <span style="color: brown;">24891</span>
+                        条消息
+                    </div>
+                    <div class="text112">对你的话说不完</div>
+                    <div><br></div>
+                    <div class="text112">
+                        <span style="color: brown;">5月</span>
+                        只有
+                        <span style="color: brown;">224</span>
+                        条消息
+                    </div>
+                    <div class="text112">有时候你们也想静静</div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div>
+                <img class="Mountain-Image" src="https://www.freeimg.cn/i/2023/12/20/6582c04711cd2.png" alt="Mountain Image">
+                <img class="corner-light light-top-left txt" src="https://www.freeimg.cn/i/2023/12/20/6582c05d9dcbb.png" alt="Top Left Light">
+                <img class="corner-light light-top-right txt" src="https://www.freeimg.cn/i/2023/12/20/6582c07b257db.png" alt="Bottom Right Light">
+                <img src="https://www.freeimg.cn/i/2023/12/20/6582c064276db.png" alt="包饺子" class="corner-image left-bottom">
+                <img src="https://www.freeimg.cn/i/2023/12/21/658313714609b.png" alt="Right Top Image" class="corner-image right-bottom">
+                <div class="calendar-container">
+                    <div class="text012">2023年</div>
+                    <div class="text012">
+                        我们有
+                        <span style="color: brown;">179</span>
+                        天在聊天
+                    </div>
+                    <div class="text012">有你在的日子里</div>
+                    <div class="text012">
+                        都很有
+                        <span style="color: brown;">意义</span>！
+                    </div>
+                    <div><br></div>
+                    <div class="text012">这一年</div>
+                    <div class="text012">
+                        一共发送了
+                        <span style="color: brown;">12470</span>
+                        个表情包
+                    </div>
+                    <div class="text012">Ta最常用的表情包是</div>
+                    <img src="http://vweixinf.tc.qq.com/110/20401/stodownload?m=149771088a46979e14ba45689a6d0f6d&amp;filekey=30440201010430302e02016e04025348042031343937373130383861343639373965313462613435363839613664306636640203016443040d00000004627466730000000131&amp;hy=SH&amp;storeid=323032313032303731363337333330303030356538393062386339333961623631663964303930303030303036653031303034666231&amp;ef=1&amp;bizid=1022" class="emoji">
+                    <div class="text012">
+                        一共
+                        <span style="color: brown;">1212</span>次
+                    </div>
+                </div>
+                <div id="calendar-chart" class="calendar-chart"></div>
+            </div>
+        </div>
+        <div class="section">
+            <h1 style="text-align: center;">期待你我的未来</h1>
+        </div>
+        <!-- Add more sections as needed -->
+    </div>
+
+
+    <script>
+        // JavaScript 代码用于生成聊天内容和雪花动画
+        document.addEventListener('DOMContentLoaded', function () {
+            const snowContainer = document.getElementById('snow');
+            // 生成雪花动画
+            for (let i = 0; i < 50; i++) {
+                const snowflake = document.createElement('div');
+                snowflake.className = 'snowflake';
+                var ran = Math.random();
+                var ran0 = 1 - ran;
+                snowflake.style.left = `${Math.random() * 150}vw`;
+                snowflake.style.animationDuration = `${ran0 * 20 + 7}s`;
+                snowflake.style.setProperty('--animation-order', i);
+
+                // 设置雪花的随机大小
+                const size = ran * 20 + 10; // 随机大小在 10 到 30 之间
+                snowflake.style.width = `${size}px`;
+                snowflake.style.height = `${size}px`;
+
+                snowContainer.appendChild(snowflake);
+            }
+        });
+        function createSnowflake(top, left) {
+            const snowflake = document.createElement('div');
+            snowflake.className = 'snowflake0';
+            snowflake.style.top = `${top}vh`;
+            snowflake.style.left = `${left}vw`;
+            // 设置雪花的随机大小
+            const size = Math.random() * 20 + 10; // 随机大小在 10 到 30 之间
+            snowflake.style.width = `${size}px`;
+            snowflake.style.height = `${size}px`;
+            document.body.appendChild(snowflake);
+        }
+    </script>
+    <script>
+        var chart = echarts.init(document.getElementById('word_cloud'), 'white', { renderer: 'canvas' });
+        var result = {
+            "animation": true,
+            "animationThreshold": 2000,
+            "animationDuration": 1000,
+            "animationEasing": "cubicOut",
+            "animationDelay": 0,
+            "animationDurationUpdate": 300,
+            "animationEasingUpdate": "cubicOut",
+            "animationDelayUpdate": 0,
+            "aria": {
+                "enabled": false
+            },
+            "color": [
+                "#5470c6",
+                "#91cc75",
+                "#fac858",
+                "#ee6666",
+                "#73c0de",
+                "#3ba272",
+                "#fc8452",
+                "#9a60b4",
+                "#ea7ccc"
+            ],
+            "series": [
+                {
+                    "type": "wordCloud",
+                    "name": "\u804a\u5929\u6587\u5b57",
+                    "shape": "circle",
+                    "rotationRange": [
+                        -90,
+                        90
+                    ],
+                    "rotationStep": 45,
+                    "girdSize": 20,
+                    "sizeRange": [
+                        5,
+                        40
+                    ],
+                    "data": [
+                        {
+                            "name": "\u5b9d\u8d1d",
+                            "value": 1508,
+                            "textStyle": {
+                                "color": "rgb(37,156,54)"
+                            }
+                        },
+                        {
+                            "name": "\u54b1\u4fe9",
+                            "value": 1191,
+                            "textStyle": {
+                                "color": "rgb(151,30,84)"
+                            }
+                        },
+                        {
+                            "name": "\u563f\u563f",
+                            "value": 1037,
+                            "textStyle": {
+                                "color": "rgb(48,47,102)"
+                            }
+                        },
+                        {
+                            "name": "\u5b9d\u5b9d",
+                            "value": 948,
+                            "textStyle": {
+                                "color": "rgb(85,133,75)"
+                            }
+                        },
+                        {
+                            "name": "\u7761\u89c9",
+                            "value": 922,
+                            "textStyle": {
+                                "color": "rgb(159,139,79)"
+                            }
+                        },
+                        {
+                            "name": "\u660e\u5929",
+                            "value": 865,
+                            "textStyle": {
+                                "color": "rgb(66,110,120)"
+                            }
+                        },
+                        {
+                            "name": "\u545c\u545c",
+                            "value": 782,
+                            "textStyle": {
+                                "color": "rgb(78,8,123)"
+                            }
+                        },
+                        {
+                            "name": "\u5bb3\u7f9e",
+                            "value": 779,
+                            "textStyle": {
+                                "color": "rgb(106,68,42)"
+                            }
+                        },
+                        {
+                            "name": "\u4eb2\u4eb2",
+                            "value": 714,
+                            "textStyle": {
+                                "color": "rgb(38,159,145)"
+                            }
+                        },
+                        {
+                            "name": "\u5567\u5567",
+                            "value": 697,
+                            "textStyle": {
+                                "color": "rgb(90,38,35)"
+                            }
+                        },
+                        {
+                            "name": "\u611f\u89c9",
+                            "value": 691,
+                            "textStyle": {
+                                "color": "rgb(77,139,135)"
+                            }
+                        },
+                        {
+                            "name": "\u6ca1\u4e8b",
+                            "value": 639,
+                            "textStyle": {
+                                "color": "rgb(99,9,18)"
+                            }
+                        },
+                        {
+                            "name": "\u6d41\u6cea",
+                            "value": 599,
+                            "textStyle": {
+                                "color": "rgb(138,28,0)"
+                            }
+                        },
+                        {
+                            "name": "\u54e6\u54e6\u54e6",
+                            "value": 536,
+                            "textStyle": {
+                                "color": "rgb(122,54,80)"
+                            }
+                        },
+                        {
+                            "name": "\u559c\u6b22",
+                            "value": 498,
+                            "textStyle": {
+                                "color": "rgb(132,2,127)"
+                            }
+                        },
+                        {
+                            "name": "\u771f\u7684",
+                            "value": 466,
+                            "textStyle": {
+                                "color": "rgb(107,71,51)"
+                            }
+                        },
+                        {
+                            "name": "\u5e72\u561b",
+                            "value": 449,
+                            "textStyle": {
+                                "color": "rgb(160,49,85)"
+                            }
+                        },
+                        {
+                            "name": "\u4e0d\u884c",
+                            "value": 447,
+                            "textStyle": {
+                                "color": "rgb(129,117,80)"
+                            }
+                        },
+                        {
+                            "name": "\u8001\u516c",
+                            "value": 433,
+                            "textStyle": {
+                                "color": "rgb(74,70,1)"
+                            }
+                        },
+                        {
+                            "name": "\u4e0d\u60f3",
+                            "value": 405,
+                            "textStyle": {
+                                "color": "rgb(68,99,129)"
+                            }
+                        },
+                        {
+                            "name": "\u665a\u5b89",
+                            "value": 403,
+                            "textStyle": {
+                                "color": "rgb(157,79,133)"
+                            }
+                        },
+                        {
+                            "name": "\u5e94\u8be5",
+                            "value": 386,
+                            "textStyle": {
+                                "color": "rgb(26,106,33)"
+                            }
+                        },
+                        {
+                            "name": "\u5634\u5507",
+                            "value": 385,
+                            "textStyle": {
+                                "color": "rgb(49,27,57)"
+                            }
+                        },
+                        {
+                            "name": "\u5403\u996d",
+                            "value": 363,
+                            "textStyle": {
+                                "color": "rgb(112,96,50)"
+                            }
+                        },
+                        {
+                            "name": "\u89c6\u9891",
+                            "value": 342,
+                            "textStyle": {
+                                "color": "rgb(138,123,111)"
+                            }
+                        },
+                        {
+                            "name": "\u597d\u770b",
+                            "value": 337,
+                            "textStyle": {
+                                "color": "rgb(141,103,41)"
+                            }
+                        },
+                        {
+                            "name": "\u665a\u4e0a",
+                            "value": 336,
+                            "textStyle": {
+                                "color": "rgb(15,21,134)"
+                            }
+                        },
+                        {
+                            "name": "\u5b89\u5b89",
+                            "value": 309,
+                            "textStyle": {
+                                "color": "rgb(144,107,35)"
+                            }
+                        },
+                        {
+                            "name": "\u4e3a\u5565",
+                            "value": 302,
+                            "textStyle": {
+                                "color": "rgb(139,119,99)"
+                            }
+                        },
+                        {
+                            "name": "\u4e0d\u7528",
+                            "value": 299,
+                            "textStyle": {
+                                "color": "rgb(64,34,27)"
+                            }
+                        },
+                        {
+                            "name": "\u544a\u8bc9",
+                            "value": 299,
+                            "textStyle": {
+                                "color": "rgb(57,140,71)"
+                            }
+                        },
+                        {
+                            "name": "\u597d\u50cf",
+                            "value": 291,
+                            "textStyle": {
+                                "color": "rgb(112,18,138)"
+                            }
+                        },
+                        {
+                            "name": "\u5230\u65f6\u5019",
+                            "value": 291,
+                            "textStyle": {
+                                "color": "rgb(81,118,73)"
+                            }
+                        },
+                        {
+                            "name": "\u5bdd\u5ba4",
+                            "value": 278,
+                            "textStyle": {
+                                "color": "rgb(101,109,141)"
+                            }
+                        },
+                        {
+                            "name": "\u597d\u5403",
+                            "value": 275,
+                            "textStyle": {
+                                "color": "rgb(4,65,50)"
+                            }
+                        },
+                        {
+                            "name": "\u6211\u8981",
+                            "value": 272,
+                            "textStyle": {
+                                "color": "rgb(134,23,92)"
+                            }
+                        },
+                        {
+                            "name": "\u56de\u53bb",
+                            "value": 265,
+                            "textStyle": {
+                                "color": "rgb(116,160,12)"
+                            }
+                        },
+                        {
+                            "name": "\u563b\u563b",
+                            "value": 263,
+                            "textStyle": {
+                                "color": "rgb(121,33,0)"
+                            }
+                        },
+                        {
+                            "name": "\u5bb3\u6015",
+                            "value": 254,
+                            "textStyle": {
+                                "color": "rgb(8,123,149)"
+                            }
+                        },
+                        {
+                            "name": "\u5565\u65f6\u5019",
+                            "value": 253,
+                            "textStyle": {
+                                "color": "rgb(43,66,16)"
+                            }
+                        },
+                        {
+                            "name": "\u6211\u5b9d",
+                            "value": 249,
+                            "textStyle": {
+                                "color": "rgb(69,133,7)"
+                            }
+                        },
+                        {
+                            "name": "\u624b\u673a",
+                            "value": 246,
+                            "textStyle": {
+                                "color": "rgb(57,101,97)"
+                            }
+                        },
+                        {
+                            "name": "\u597d\u597d",
+                            "value": 239,
+                            "textStyle": {
+                                "color": "rgb(65,6,66)"
+                            }
+                        },
+                        {
+                            "name": "\u6211\u7231\u4f60",
+                            "value": 238,
+                            "textStyle": {
+                                "color": "rgb(118,150,52)"
+                            }
+                        },
+                        {
+                            "name": "\u5367\u69fd",
+                            "value": 232,
+                            "textStyle": {
+                                "color": "rgb(31,100,79)"
+                            }
+                        },
+                        {
+                            "name": "\u6536\u62fe",
+                            "value": 224,
+                            "textStyle": {
+                                "color": "rgb(112,110,53)"
+                            }
+                        },
+                        {
+                            "name": "\u4e0a\u8bfe",
+                            "value": 222,
+                            "textStyle": {
+                                "color": "rgb(95,149,41)"
+                            }
+                        },
+                        {
+                            "name": "\u96be\u53d7",
+                            "value": 222,
+                            "textStyle": {
+                                "color": "rgb(133,145,104)"
+                            }
+                        },
+                        {
+                            "name": "\u4e0d\u5230",
+                            "value": 219,
+                            "textStyle": {
+                                "color": "rgb(149,105,54)"
+                            }
+                        },
+                        {
+                            "name": "\u6587\u5b66\u9662",
+                            "value": 219,
+                            "textStyle": {
+                                "color": "rgb(108,106,44)"
+                            }
+                        },
+                        {
+                            "name": "\u8bf4\u8bdd",
+                            "value": 214,
+                            "textStyle": {
+                                "color": "rgb(1,32,106)"
+                            }
+                        },
+                        {
+                            "name": "\u4e1c\u897f",
+                            "value": 210,
+                            "textStyle": {
+                                "color": "rgb(23,15,129)"
+                            }
+                        },
+                        {
+                            "name": "\u80af\u5b9a",
+                            "value": 202,
+                            "textStyle": {
+                                "color": "rgb(11,32,76)"
+                            }
+                        },
+                        {
+                            "name": "\u56de\u6765",
+                            "value": 201,
+                            "textStyle": {
+                                "color": "rgb(3,105,53)"
+                            }
+                        },
+                        {
+                            "name": "\u751f\u6c14",
+                            "value": 197,
+                            "textStyle": {
+                                "color": "rgb(87,79,127)"
+                            }
+                        },
+                        {
+                            "name": "\u56de\u5bb6",
+                            "value": 196,
+                            "textStyle": {
+                                "color": "rgb(101,35,65)"
+                            }
+                        },
+                        {
+                            "name": "\u5929\u5929",
+                            "value": 192,
+                            "textStyle": {
+                                "color": "rgb(159,145,91)"
+                            }
+                        },
+                        {
+                            "name": "\u5389\u5bb3",
+                            "value": 191,
+                            "textStyle": {
+                                "color": "rgb(57,19,134)"
+                            }
+                        },
+                        {
+                            "name": "\u5b9d\u5b50",
+                            "value": 190,
+                            "textStyle": {
+                                "color": "rgb(84,109,160)"
+                            }
+                        },
+                        {
+                            "name": "\u7761\u4f1a",
+                            "value": 189,
+                            "textStyle": {
+                                "color": "rgb(89,45,8)"
+                            }
+                        },
+                        {
+                            "name": "okok",
+                            "value": 187,
+                            "textStyle": {
+                                "color": "rgb(70,71,150)"
+                            }
+                        },
+                        {
+                            "name": "\u8bd5\u8bd5",
+                            "value": 183,
+                            "textStyle": {
+                                "color": "rgb(27,36,94)"
+                            }
+                        },
+                        {
+                            "name": "\u554a\u554a\u554a",
+                            "value": 182,
+                            "textStyle": {
+                                "color": "rgb(141,85,5)"
+                            }
+                        },
+                        {
+                            "name": "\u5b66\u6821",
+                            "value": 180,
+                            "textStyle": {
+                                "color": "rgb(51,112,137)"
+                            }
+                        },
+                        {
+                            "name": "\u770b\u7740",
+                            "value": 177,
+                            "textStyle": {
+                                "color": "rgb(66,71,14)"
+                            }
+                        },
+                        {
+                            "name": "\u4e0d\u597d",
+                            "value": 173,
+                            "textStyle": {
+                                "color": "rgb(52,21,90)"
+                            }
+                        },
+                        {
+                            "name": "\u4e0b\u5348",
+                            "value": 172,
+                            "textStyle": {
+                                "color": "rgb(122,0,69)"
+                            }
+                        },
+                        {
+                            "name": "\u5fc3\u75bc",
+                            "value": 171,
+                            "textStyle": {
+                                "color": "rgb(135,83,109)"
+                            }
+                        },
+                        {
+                            "name": "\u5b66\u4e60",
+                            "value": 168,
+                            "textStyle": {
+                                "color": "rgb(41,127,95)"
+                            }
+                        },
+                        {
+                            "name": "\u6211\u5bb6",
+                            "value": 165,
+                            "textStyle": {
+                                "color": "rgb(82,81,109)"
+                            }
+                        },
+                        {
+                            "name": "\u6211\u5988",
+                            "value": 164,
+                            "textStyle": {
+                                "color": "rgb(66,46,157)"
+                            }
+                        },
+                        {
+                            "name": "mua",
+                            "value": 164,
+                            "textStyle": {
+                                "color": "rgb(26,69,134)"
+                            }
+                        },
+                        {
+                            "name": "\u5413\u4eba",
+                            "value": 160,
+                            "textStyle": {
+                                "color": "rgb(83,41,35)"
+                            }
+                        },
+                        {
+                            "name": "\u563f\u563f\u563f",
+                            "value": 160,
+                            "textStyle": {
+                                "color": "rgb(89,83,36)"
+                            }
+                        },
+                        {
+                            "name": "\u5f00\u5fc3",
+                            "value": 160,
+                            "textStyle": {
+                                "color": "rgb(11,38,88)"
+                            }
+                        },
+                        {
+                            "name": "\u4e0d\u8ba9",
+                            "value": 159,
+                            "textStyle": {
+                                "color": "rgb(118,153,95)"
+                            }
+                        },
+                        {
+                            "name": "\u4e00\u4f1a\u513f",
+                            "value": 157,
+                            "textStyle": {
+                                "color": "rgb(53,77,67)"
+                            }
+                        },
+                        {
+                            "name": "\u95ee\u95ee",
+                            "value": 155,
+                            "textStyle": {
+                                "color": "rgb(148,125,119)"
+                            }
+                        },
+                        {
+                            "name": "\u59d4\u5c48",
+                            "value": 155,
+                            "textStyle": {
+                                "color": "rgb(63,82,76)"
+                            }
+                        },
+                        {
+                            "name": "\u642d\u7406",
+                            "value": 155,
+                            "textStyle": {
+                                "color": "rgb(148,124,127)"
+                            }
+                        },
+                        {
+                            "name": "\u4e0d\u8bb8",
+                            "value": 153,
+                            "textStyle": {
+                                "color": "rgb(78,19,16)"
+                            }
+                        },
+                        {
+                            "name": "\u5927\u5b66",
+                            "value": 150,
+                            "textStyle": {
+                                "color": "rgb(87,117,20)"
+                            }
+                        },
+                        {
+                            "name": "\u90a3\u79cd",
+                            "value": 147,
+                            "textStyle": {
+                                "color": "rgb(31,103,127)"
+                            }
+                        },
+                        {
+                            "name": "\u5b8c\u4e8b",
+                            "value": 146,
+                            "textStyle": {
+                                "color": "rgb(144,105,65)"
+                            }
+                        },
+                        {
+                            "name": "\u5ab3\u5987",
+                            "value": 145,
+                            "textStyle": {
+                                "color": "rgb(7,70,4)"
+                            }
+                        },
+                        {
+                            "name": "\u8d85\u7ea7",
+                            "value": 144,
+                            "textStyle": {
+                                "color": "rgb(27,63,100)"
+                            }
+                        },
+                        {
+                            "name": "\u73a9\u610f",
+                            "value": 138,
+                            "textStyle": {
+                                "color": "rgb(155,135,111)"
+                            }
+                        },
+                        {
+                            "name": "\u5206\u624b",
+                            "value": 138,
+                            "textStyle": {
+                                "color": "rgb(53,112,4)"
+                            }
+                        },
+                        {
+                            "name": "\u62b1\u62b1",
+                            "value": 137,
+                            "textStyle": {
+                                "color": "rgb(152,43,14)"
+                            }
+                        },
+                        {
+                            "name": "\u4e2d\u5348",
+                            "value": 136,
+                            "textStyle": {
+                                "color": "rgb(105,44,101)"
+                            }
+                        },
+                        {
+                            "name": "\u4e00\u70b9",
+                            "value": 135,
+                            "textStyle": {
+                                "color": "rgb(76,75,43)"
+                            }
+                        },
+                        {
+                            "name": "\u7167\u7247",
+                            "value": 135,
+                            "textStyle": {
+                                "color": "rgb(71,65,54)"
+                            }
+                        },
+                        {
+                            "name": "\u8863\u670d",
+                            "value": 134,
+                            "textStyle": {
+                                "color": "rgb(145,102,105)"
+                            }
+                        },
+                        {
+                            "name": "\u5730\u65b9",
+                            "value": 134,
+                            "textStyle": {
+                                "color": "rgb(122,33,103)"
+                            }
+                        },
+                        {
+                            "name": "\u90e8\u957f",
+                            "value": 134,
+                            "textStyle": {
+                                "color": "rgb(56,150,84)"
+                            }
+                        },
+                        {
+                            "name": "\u4e0b\u6b21",
+                            "value": 133,
+                            "textStyle": {
+                                "color": "rgb(104,35,93)"
+                            }
+                        },
+                        {
+                            "name": "\u6709\u4eba",
+                            "value": 133,
+                            "textStyle": {
+                                "color": "rgb(63,43,116)"
+                            }
+                        },
+                        {
+                            "name": "\u6b3a\u8d1f",
+                            "value": 133,
+                            "textStyle": {
+                                "color": "rgb(1,77,4)"
+                            }
+                        },
+                        {
+                            "name": "\u8bb0\u5f97",
+                            "value": 133,
+                            "textStyle": {
+                                "color": "rgb(89,121,155)"
+                            }
+                        },
+                        {
+                            "name": "\u540c\u5b66",
+                            "value": 130,
+                            "textStyle": {
+                                "color": "rgb(18,130,97)"
+                            }
+                        }
+                    ],
+                    "drawOutOfBound": false,
+                    "textStyle": {
+                        "emphasis": {}
+                    }
+                }
+            ],
+            "legend": [
+                {
+                    "data": [],
+                    "selected": {}
+                }
+            ],
+            "tooltip": {
+                "show": true,
+                "trigger": "item",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "line"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "enterable": false,
+                "confine": false,
+                "appendToBody": false,
+                "transitionDuration": 0.4,
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5,
+                "order": "seriesAsc"
+            }
+        };
+        // 获取屏幕宽度
+        const screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+
+        // 根据屏幕宽度设置字体范围
+        let fontSizeRange;
+        if (screenWidth < 768) { // 手机屏幕
+            fontSizeRange = [5, 40];
+        } else { // 电脑屏幕
+            fontSizeRange = [10, 100];
+        }
+        result.series[0].sizeRange = fontSizeRange;
+        chart.setOption(result);
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#fullpage').fullpage();
+        });
+    </script>
+    <script type="text/javascript">
+    function getRTime() {
+            var tt = document.getElementById("first_time").innerText;
+            var EndTime = new Date(tt);
+            var NowTime = new Date();
+            var t = NowTime.getTime() - EndTime.getTime();
+            var d = Math.floor(t / 1000 / 60 / 60 / 24);
+            var h = Math.floor(t / 1000 / 60 / 60 % 24);
+            var m = Math.floor(t / 1000 / 60 % 60);
+            var s = Math.floor(t / 1000 % 60);
+            document.getElementById("t_d").innerHTML = d + " 天";
+            document.getElementById("t_h").innerHTML = h + " 时";
+            document.getElementById("t_m").innerHTML = m + " 分";
+            document.getElementById("t_s").innerHTML = s + " 秒";
+        }
+        setInterval(getRTime, 1000);
+
+    </script>
+    <script>
+        var chart_51ebd4312946429e9c32b2b55b96a479 = echarts.init(
+            document.getElementById('calendar-chart'), 'white', { renderer: 'canvas' });
+        var result = {
+            "animation": true,
+            "animationThreshold": 2000,
+            "animationDuration": 1000,
+            "animationEasing": "cubicOut",
+            "animationDelay": 0,
+            "animationDurationUpdate": 300,
+            "animationEasingUpdate": "cubicOut",
+            "animationDelayUpdate": 0,
+            "aria": {
+                "enabled": false
+            },
+            "color": [
+                "#5470c6",
+                "#91cc75",
+                "#fac858",
+                "#ee6666",
+                "#73c0de",
+                "#3ba272",
+                "#fc8452",
+                "#9a60b4",
+                "#ea7ccc"
+            ],
+            "series": [
+                {
+                    "type": "heatmap",
+                    "coordinateSystem": "calendar",
+                    "data": [
+                        [
+                            "2023-05-15",
+                            81
+                        ],
+                        [
+                            "2023-05-17",
+                            1
+                        ],
+                        [
+                            "2023-05-21",
+                            9
+                        ],
+                        [
+                            "2023-05-26",
+                            1
+                        ],
+                        [
+                            "2023-05-27",
+                            74
+                        ],
+                        [
+                            "2023-05-28",
+                            8
+                        ],
+                        [
+                            "2023-05-29",
+                            49
+                        ],
+                        [
+                            "2023-05-31",
+                            1
+                        ],
+                        [
+                            "2023-06-01",
+                            23
+                        ],
+                        [
+                            "2023-06-02",
+                            22
+                        ],
+                        [
+                            "2023-06-03",
+                            6
+                        ],
+                        [
+                            "2023-06-04",
+                            30
+                        ],
+                        [
+                            "2023-06-05",
+                            15
+                        ],
+                        [
+                            "2023-06-06",
+                            123
+                        ],
+                        [
+                            "2023-06-07",
+                            132
+                        ],
+                        [
+                            "2023-06-08",
+                            366
+                        ],
+                        [
+                            "2023-06-09",
+                            872
+                        ],
+                        [
+                            "2023-06-10",
+                            1194
+                        ],
+                        [
+                            "2023-06-11",
+                            1639
+                        ],
+                        [
+                            "2023-06-12",
+                            1401
+                        ],
+                        [
+                            "2023-06-13",
+                            185
+                        ],
+                        [
+                            "2023-06-17",
+                            213
+                        ],
+                        [
+                            "2023-06-18",
+                            2849
+                        ],
+                        [
+                            "2023-06-19",
+                            1981
+                        ],
+                        [
+                            "2023-06-20",
+                            1838
+                        ],
+                        [
+                            "2023-06-21",
+                            2037
+                        ],
+                        [
+                            "2023-06-22",
+                            1802
+                        ],
+                        [
+                            "2023-06-23",
+                            2134
+                        ],
+                        [
+                            "2023-06-24",
+                            1192
+                        ],
+                        [
+                            "2023-06-25",
+                            543
+                        ],
+                        [
+                            "2023-06-26",
+                            1112
+                        ],
+                        [
+                            "2023-06-27",
+                            1051
+                        ],
+                        [
+                            "2023-06-28",
+                            1682
+                        ],
+                        [
+                            "2023-06-29",
+                            340
+                        ],
+                        [
+                            "2023-06-30",
+                            109
+                        ],
+                        [
+                            "2023-07-01",
+                            1394
+                        ],
+                        [
+                            "2023-07-02",
+                            1255
+                        ],
+                        [
+                            "2023-07-03",
+                            1135
+                        ],
+                        [
+                            "2023-07-04",
+                            804
+                        ],
+                        [
+                            "2023-07-06",
+                            391
+                        ],
+                        [
+                            "2023-07-07",
+                            825
+                        ],
+                        [
+                            "2023-07-08",
+                            821
+                        ],
+                        [
+                            "2023-07-09",
+                            290
+                        ],
+                        [
+                            "2023-07-11",
+                            707
+                        ],
+                        [
+                            "2023-07-12",
+                            1027
+                        ],
+                        [
+                            "2023-07-13",
+                            1938
+                        ],
+                        [
+                            "2023-07-14",
+                            1056
+                        ],
+                        [
+                            "2023-07-15",
+                            652
+                        ],
+                        [
+                            "2023-07-16",
+                            333
+                        ],
+                        [
+                            "2023-07-17",
+                            1086
+                        ],
+                        [
+                            "2023-07-20",
+                            1577
+                        ],
+                        [
+                            "2023-07-21",
+                            822
+                        ],
+                        [
+                            "2023-07-22",
+                            1224
+                        ],
+                        [
+                            "2023-07-23",
+                            779
+                        ],
+                        [
+                            "2023-07-24",
+                            440
+                        ],
+                        [
+                            "2023-07-29",
+                            67
+                        ],
+                        [
+                            "2023-07-30",
+                            1364
+                        ],
+                        [
+                            "2023-07-31",
+                            644
+                        ],
+                        [
+                            "2023-08-03",
+                            598
+                        ],
+                        [
+                            "2023-08-04",
+                            1205
+                        ],
+                        [
+                            "2023-08-05",
+                            991
+                        ],
+                        [
+                            "2023-08-06",
+                            947
+                        ],
+                        [
+                            "2023-08-07",
+                            624
+                        ],
+                        [
+                            "2023-08-08",
+                            1179
+                        ],
+                        [
+                            "2023-08-09",
+                            909
+                        ],
+                        [
+                            "2023-08-10",
+                            901
+                        ],
+                        [
+                            "2023-08-11",
+                            1572
+                        ],
+                        [
+                            "2023-08-12",
+                            433
+                        ],
+                        [
+                            "2023-08-15",
+                            359
+                        ],
+                        [
+                            "2023-08-16",
+                            931
+                        ],
+                        [
+                            "2023-08-17",
+                            1348
+                        ],
+                        [
+                            "2023-08-20",
+                            713
+                        ],
+                        [
+                            "2023-08-21",
+                            636
+                        ],
+                        [
+                            "2023-08-23",
+                            1660
+                        ],
+                        [
+                            "2023-08-24",
+                            201
+                        ],
+                        [
+                            "2023-08-26",
+                            228
+                        ],
+                        [
+                            "2023-08-27",
+                            355
+                        ],
+                        [
+                            "2023-08-28",
+                            329
+                        ],
+                        [
+                            "2023-08-29",
+                            868
+                        ],
+                        [
+                            "2023-08-31",
+                            1031
+                        ],
+                        [
+                            "2023-09-01",
+                            154
+                        ],
+                        [
+                            "2023-09-02",
+                            556
+                        ],
+                        [
+                            "2023-09-03",
+                            1159
+                        ],
+                        [
+                            "2023-09-04",
+                            189
+                        ],
+                        [
+                            "2023-09-05",
+                            850
+                        ],
+                        [
+                            "2023-09-09",
+                            20
+                        ],
+                        [
+                            "2023-09-10",
+                            965
+                        ],
+                        [
+                            "2023-09-11",
+                            1535
+                        ],
+                        [
+                            "2023-09-12",
+                            1117
+                        ],
+                        [
+                            "2023-09-13",
+                            436
+                        ],
+                        [
+                            "2023-09-16",
+                            109
+                        ],
+                        [
+                            "2023-09-17",
+                            770
+                        ],
+                        [
+                            "2023-09-18",
+                            274
+                        ],
+                        [
+                            "2023-09-19",
+                            893
+                        ],
+                        [
+                            "2023-09-20",
+                            294
+                        ],
+                        [
+                            "2023-09-21",
+                            758
+                        ],
+                        [
+                            "2023-09-22",
+                            836
+                        ],
+                        [
+                            "2023-09-23",
+                            450
+                        ],
+                        [
+                            "2023-09-24",
+                            706
+                        ],
+                        [
+                            "2023-09-25",
+                            751
+                        ],
+                        [
+                            "2023-09-26",
+                            476
+                        ],
+                        [
+                            "2023-09-27",
+                            723
+                        ],
+                        [
+                            "2023-09-28",
+                            927
+                        ],
+                        [
+                            "2023-10-05",
+                            16
+                        ],
+                        [
+                            "2023-10-06",
+                            1112
+                        ],
+                        [
+                            "2023-10-07",
+                            519
+                        ],
+                        [
+                            "2023-10-08",
+                            612
+                        ],
+                        [
+                            "2023-10-09",
+                            558
+                        ],
+                        [
+                            "2023-10-10",
+                            1378
+                        ],
+                        [
+                            "2023-10-11",
+                            776
+                        ],
+                        [
+                            "2023-10-13",
+                            492
+                        ],
+                        [
+                            "2023-10-14",
+                            539
+                        ],
+                        [
+                            "2023-10-15",
+                            224
+                        ],
+                        [
+                            "2023-10-16",
+                            516
+                        ],
+                        [
+                            "2023-10-17",
+                            564
+                        ],
+                        [
+                            "2023-10-18",
+                            705
+                        ],
+                        [
+                            "2023-10-19",
+                            661
+                        ],
+                        [
+                            "2023-10-20",
+                            279
+                        ],
+                        [
+                            "2023-10-21",
+                            603
+                        ],
+                        [
+                            "2023-10-22",
+                            563
+                        ],
+                        [
+                            "2023-10-23",
+                            593
+                        ],
+                        [
+                            "2023-10-24",
+                            195
+                        ],
+                        [
+                            "2023-10-26",
+                            764
+                        ],
+                        [
+                            "2023-10-27",
+                            262
+                        ],
+                        [
+                            "2023-10-28",
+                            112
+                        ],
+                        [
+                            "2023-10-29",
+                            759
+                        ],
+                        [
+                            "2023-10-30",
+                            810
+                        ],
+                        [
+                            "2023-10-31",
+                            614
+                        ],
+                        [
+                            "2023-11-02",
+                            815
+                        ],
+                        [
+                            "2023-11-03",
+                            936
+                        ],
+                        [
+                            "2023-11-04",
+                            969
+                        ],
+                        [
+                            "2023-11-05",
+                            1311
+                        ],
+                        [
+                            "2023-11-06",
+                            758
+                        ],
+                        [
+                            "2023-11-07",
+                            913
+                        ],
+                        [
+                            "2023-11-09",
+                            240
+                        ],
+                        [
+                            "2023-11-10",
+                            234
+                        ],
+                        [
+                            "2023-11-11",
+                            45
+                        ],
+                        [
+                            "2023-11-12",
+                            775
+                        ],
+                        [
+                            "2023-11-13",
+                            528
+                        ],
+                        [
+                            "2023-11-14",
+                            409
+                        ],
+                        [
+                            "2023-11-15",
+                            306
+                        ],
+                        [
+                            "2023-11-16",
+                            673
+                        ],
+                        [
+                            "2023-11-17",
+                            1217
+                        ],
+                        [
+                            "2023-11-18",
+                            938
+                        ],
+                        [
+                            "2023-11-19",
+                            384
+                        ],
+                        [
+                            "2023-11-20",
+                            499
+                        ],
+                        [
+                            "2023-11-21",
+                            677
+                        ],
+                        [
+                            "2023-11-22",
+                            803
+                        ],
+                        [
+                            "2023-11-23",
+                            560
+                        ],
+                        [
+                            "2023-11-24",
+                            297
+                        ],
+                        [
+                            "2023-11-25",
+                            250
+                        ],
+                        [
+                            "2023-11-26",
+                            791
+                        ],
+                        [
+                            "2023-11-27",
+                            45
+                        ],
+                        [
+                            "2023-11-29",
+                            472
+                        ],
+                        [
+                            "2023-11-30",
+                            1001
+                        ],
+                        [
+                            "2023-12-01",
+                            1608
+                        ],
+                        [
+                            "2023-12-02",
+                            838
+                        ],
+                        [
+                            "2023-12-03",
+                            723
+                        ],
+                        [
+                            "2023-12-04",
+                            842
+                        ],
+                        [
+                            "2023-12-05",
+                            1109
+                        ],
+                        [
+                            "2023-12-06",
+                            1012
+                        ],
+                        [
+                            "2023-12-07",
+                            589
+                        ],
+                        [
+                            "2023-12-08",
+                            561
+                        ],
+                        [
+                            "2023-12-09",
+                            307
+                        ],
+                        [
+                            "2023-12-10",
+                            946
+                        ],
+                        [
+                            "2023-12-12",
+                            876
+                        ],
+                        [
+                            "2023-12-13",
+                            1421
+                        ],
+                        [
+                            "2023-12-14",
+                            186
+                        ],
+                        [
+                            "2023-12-15",
+                            233
+                        ],
+                        [
+                            "2023-12-16",
+                            1110
+                        ],
+                        [
+                            "2023-12-17",
+                            560
+                        ],
+                        [
+                            "2023-12-19",
+                            697
+                        ],
+                        [
+                            "2023-12-20",
+                            910
+                        ],
+                        [
+                            "2023-12-21",
+                            380
+                        ],
+                        [
+                            "2023-12-22",
+                            617
+                        ],
+                        [
+                            "2023-12-25",
+                            69
+                        ],
+                        [
+                            "2023-12-26",
+                            340
+                        ],
+                        [
+                            "2023-12-29",
+                            652
+                        ],
+                        [
+                            "2023-12-30",
+                            3
+                        ]
+                    ],
+                    "label": {
+                        "show": false,
+                        "position": "inside",
+                        "margin": 8
+                    }
+                }
+            ],
+            "legend": [
+                {
+                    "data": [
+                        ""
+                    ],
+                    "selected": {
+                        "": true
+                    },
+                    "show": false,
+                    "padding": 5,
+                    "itemGap": 10,
+                    "itemWidth": 25,
+                    "itemHeight": 14,
+                    "backgroundColor": "transparent",
+                    "borderColor": "#ccc",
+                    "borderWidth": 1,
+                    "borderRadius": 0,
+                    "pageButtonItemGap": 5,
+                    "pageButtonPosition": "end",
+                    "pageFormatter": "{current}/{total}",
+                    "pageIconColor": "#2f4554",
+                    "pageIconInactiveColor": "#aaa",
+                    "pageIconSize": 15,
+                    "animationDurationUpdate": 800,
+                    "selector": false,
+                    "selectorPosition": "auto",
+                    "selectorItemGap": 7,
+                    "selectorButtonGap": 10
+                }
+            ],
+            "tooltip": {
+                "show": true,
+                "trigger": "item",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "line"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "enterable": false,
+                "confine": false,
+                "appendToBody": false,
+                "transitionDuration": 0.4,
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5,
+                "order": "seriesAsc"
+            },
+            "calendar": {
+                "zlevel": 0,
+                "z": 2,
+                "width": "auto",
+                "orient": "horizontal",
+                "range": "2023",
+                "cellSize": 20,
+                "silent": false
+            },
+            "title": [
+                {
+                    "show": true,
+                    "target": "blank",
+                    "subtarget": "blank",
+                    "padding": 5,
+                    "itemGap": 10,
+                    "textAlign": "auto",
+                    "textVerticalAlign": "auto",
+                    "triggerEvent": false
+                }
+            ],
+            "visualMap": {
+                "show": true,
+                "type": "continuous",
+                "min": 1,
+                "max": 2849,
+                "inRange": {
+                    "color": [
+                        "#50a3ba",
+                        "#eac763",
+                        "#d94e5d"
+                    ]
+                },
+                "calculable": true,
+                "inverse": false,
+                "splitNumber": 5,
+                "hoverLink": true,
+                "orient": "horizontal",
+                "left": "0px",
+                "bottom": "0px",
+                "padding": 5,
+                "showLabel": true,
+                "itemWidth": 20,
+                "itemHeight": 140,
+                "borderWidth": 0
+            }
+        };
+        // 根据屏幕宽度设置字体范围
+        let cellSize;
+        if (screenWidth < 768) { // 手机屏幕
+            result.calendar.cellSize = 10;
+        } else { // 电脑屏幕
+            result.calendar.cellSize = 15;
+        }
+        chart_51ebd4312946429e9c32b2b55b96a479.setOption(result);
+    </script>
+</body>
+</html>
